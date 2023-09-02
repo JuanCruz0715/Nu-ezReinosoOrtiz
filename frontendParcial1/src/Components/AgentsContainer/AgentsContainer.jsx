@@ -20,7 +20,7 @@ export default function AgentsContainer() {
    console.log("agentes",agentes)
     return (
         <div>
-            {agentes.map((agentes)=>(<CardAgents key={agentes.uuid} Data={agentes} />))}
+            {agentes.map((agentes)=>(<CardAgents key={agentes.uuid} data={agentes} />))}
           
         </div> //aca vamos a crear las tarjetas, con la cantidad de pj que tengamos
       );
