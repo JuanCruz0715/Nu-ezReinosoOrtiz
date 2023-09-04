@@ -8,8 +8,15 @@ export  const getAgentes = async() => {
     const response = await instance.get(url);
     return response.data.data;
 
-}  
+} 
 
+export const getGuns = async () => {
+    const url = "/weapons" 
+    const response = await instance.get(url);
+    return response.data.data;
+   
+
+}
 
 
 

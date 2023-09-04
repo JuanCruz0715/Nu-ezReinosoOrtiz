@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const CardAgents = ({data}) => {
   return (
     <div>
