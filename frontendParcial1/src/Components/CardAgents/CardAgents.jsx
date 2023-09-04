@@ -2,6 +2,9 @@ import React from 'react'
 
 export const CardAgents = ({data}) => {
   return (
-    <div>{data.displayName}</div>
-  )
-}
+    <div>
+      <h2>{data.displayName}</h2>
+      <img src={data.displayIcon} alt={data.displayName} />
+    </div>
+  );
+};

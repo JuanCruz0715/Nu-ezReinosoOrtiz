@@ -1,19 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import AgentsContainer from './Components/AgentsContainer/AgentsContainer'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Components/Home/Home'
+import Login from './Components/Login/Login'
+import { AgentsContainer } from './Components/AgentsContainer/AgentsContainer'
+function RoutesApp() {
+  
   return (
     <>
-      <div>
-   <AgentsContainer/>
-      </div>
-    </>
+      <Routes>
+   <Route path='/' element ={<Home />} />
+   <Route path='/login' element ={<Login />} />
+   <Route path='/Agents' element ={<AgentsContainer/>} />
+      </Routes>
+      </>
+  )
+}
+function RouterWrapper () {
+  return(
+    <BrowserRouter>
+    <RoutesApp />
+    </BrowserRouter>
   )
 }
 
-export default App
+export default RouterWrapper;

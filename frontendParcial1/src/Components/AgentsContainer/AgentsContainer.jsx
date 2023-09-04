@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { getAgentes } from "../../Api";
 import { CardAgents } from "../CardAgents/CardAgents";
 
-export default function AgentsContainer() { 
+export const AgentsContainer = () => { 
     const [agentes, setAgentes] = useState([])
 
     useEffect(() => {
