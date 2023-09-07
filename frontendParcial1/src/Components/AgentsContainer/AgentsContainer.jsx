@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { getAgentes } from "../../Api";
 import { CardAgents } from "../CardAgents/CardAgents";
+import "./AgentsContainer.css";
 
 export const AgentsContainer = () => { 
     const [agentes, setAgentes] = useState([])
@@ -19,13 +20,16 @@ export const AgentsContainer = () => {
     }, [])
    console.log("agentes",agentes)
    return (
-   <div>
-      {agentes.filter((agentes) => {
-         return agentes.uuid != "ded3520f-4264-bfed-162d-b080e2abccf9"
-        })
-        .map((agentes) => (
-          <CardAgents key={agentes.uuid} data={agentes} />
-        ))}
+    <div className="agents-page">
+      <h1>Agentes</h1>
+    <div className="agents-container">
+        {agentes.filter((agentes) => {
+          return agentes.uuid != "ded3520f-4264-bfed-162d-b080e2abccf9"
+          })
+          .map((agentes) => (
+            <CardAgents key={agentes.uuid} data={agentes} />
+          ))}
+      </div>
     </div>
    )
 

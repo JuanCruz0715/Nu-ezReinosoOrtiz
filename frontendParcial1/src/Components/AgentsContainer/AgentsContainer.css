@@ -1,0 +1,24 @@
+.agents-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
+    gap: 20px;
+  }
+
+.agents-page {
+    width: 100%;
+    background-image: url('public/logocard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #f2f2f2;  
+    text-align: center; 
+}
+  
+.agents-page h1 {
+    font-size: 35px; 
+    margin-bottom: 20px; 
+    font-family: 'Valorant Font', sans-serif; 
+    color: #fffdfd; 
+} 

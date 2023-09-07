@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Valorant Font';
+  src: url('src/fonts/Valorant Font.ttf') format('truetype');
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; /* Alinea la imagen al centro de la pantalla */
+  height: 100vh; /* Establece la altura del fondo al 100% del viewport */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* para el cel*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* card de agentes*/
+.card:hover {
+  transform: scale(1.05); /* Escala la tarjeta al 105% del tamaño original al pasar el mouse por encima */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Agrega una sombra al pasar el mouse por encima */
+  background-color: #f66464; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+.card {
+  background-image: url('public/logocard.jpg');
+  border: 1px solid #3a3838;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 150px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #333; /* Cambia el color de fondo a un tono más oscuro */
+  color: white; /* Cambia el color del texto a blanco para que sea legible en el fondo oscuro */
+  
+}
+/* card para el celular*/
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: 'Valorant Font', sans-serif;
+}
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas, como teléfonos */
+  .card {
+    max-width: 100%; /* Ocupar todo el ancho disponible */
+  }
+}
+/* Estilos de botón */
+.card-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card-button::before,
+.card-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.card-button::before {
+  left: -10px;
+  background: #f70000;
+}
+
+.card-button::after {
+  right: -10px;
+  background: #f65858;
+}
+
+.card-button:hover::before,
+.card-button:hover::after {
+  width: 58%;
+}
+
+.card-button span {
+  color: #fd0303;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+  
+ 
+  
