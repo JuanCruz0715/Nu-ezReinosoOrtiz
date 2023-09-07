@@ -18,10 +18,16 @@ export const AgentsContainer = () => {
       fetchData();
     }, [])
    console.log("agentes",agentes)
-    return (
-        <div>
-            {agentes.map((agentes)=>(<CardAgents key={agentes.uuid} data={agentes} />))}
-          
-        </div> //aca vamos a crear las tarjetas, con la cantidad de pj que tengamos
-      );
+   return (
+   <div>
+      {agentes.filter((agentes) => {
+         return agentes.uuid != "ded3520f-4264-bfed-162d-b080e2abccf9"
+        })
+        .map((agentes) => (
+          <CardAgents key={agentes.uuid} data={agentes} />
+        ))}
+    </div>
+   )
+
 }
+
