@@ -1,13 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react";
 export default function Navbar() {
   return (
     <div>
       Navbar
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <Link></Link>
+        <Link to=""></Link>
+        <Link to=""></Link>
       </ul>
     </div>
   );
