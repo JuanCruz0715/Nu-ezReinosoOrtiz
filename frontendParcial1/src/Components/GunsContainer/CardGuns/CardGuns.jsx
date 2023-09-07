@@ -1,13 +1,10 @@
 import React from "react";
-const CardGuns = ({data}) =>  {
+const CardGuns = ({ data }) => {
   return (
-    <div>
-   <h3>{data.displayName}</h3>
-    <img src={data.displayIcon} alt={data.displayIcon} ></img>
-    
+    <div className="Card">
+      <h3>{data.displayName}</h3>
+      <img src={data.displayIcon} alt={data.displayIcon}></img>
     </div>
   );
-
 };
-export  default CardGuns;
-
+export default CardGuns;
