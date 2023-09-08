@@ -6,9 +6,10 @@ export default function Navbar() {
     <div>
       Navbar
       <ul>
-        <Link></Link>
-        <Link to=""></Link>
-        <Link to=""></Link>
+        <Link to="/Home"></Link>
+        <Link to="/Agents"></Link>
+        <Link to="/Weapons"></Link>
+        <Link to="/Maps"></Link>
       </ul>
     </div>
   );
