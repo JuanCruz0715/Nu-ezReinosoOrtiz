@@ -19,7 +19,9 @@ export const GunsContainer = () => {
 
   return (
     <div className="Container-fondo">
+      <h2>Weapons</h2>
       <div className="Container">
+        
         {guns
           .filter((guns) => {
             return (

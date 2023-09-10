@@ -3,3 +3,6 @@ margin: 0;
 padding: 0;
 
 }
+#root{
+    background-image: url('/NUNEZREINOSOORTIZ/frontendParcial1/public/fondo.jpg');
+}

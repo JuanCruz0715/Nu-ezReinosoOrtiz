@@ -1,16 +1,25 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react";
+import { Link, NavLink } from 'react-router-dom';
+import logocard1 from '/NunezReinosoOrtiz/frontendParcial1/public/logocard1.png'
 export default function Navbar() {
   return (
-    <div>
-      Navbar
-      <ul>
-        <Link to="/Home"></Link>
-        <Link to="/Agents"></Link>
-        <Link to="/Weapons"></Link>
-        <Link to="/Maps"></Link>
+    <nav className="Container-Navbar">
+      <img  src={logocard1} alt="Valorant" />
+      <ul className="Card-Navbar">
+        <li>
+        <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
+        </li>
+        <li>
+        <NavLink to='/Agents'  className={({ isActive }) => (isActive ? 'active' : '')}>Agents</NavLink>
+        </li>
+        <li>
+        <NavLink to='/Weapons'  className={({ isActive }) => (isActive ? 'active' : '')}>Weapons</NavLink>
+        </li>
+        <li>
+        <NavLink to='/Maps'  className={({ isActive }) => (isActive ? 'active' : '')}>Maps</NavLink>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 }

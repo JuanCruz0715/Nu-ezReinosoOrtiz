@@ -4,11 +4,14 @@ import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
 import { AgentsContainer } from './Components/AgentsContainer/AgentsContainer'
 import { GunsContainer } from './Components/GunsContainer/GunsContainer'
+import Navbar from './Components/NavBar/Navbar'
 function RoutesApp() {
   
   return (
     <>
+     <Navbar/>
       <Routes>
+      
    <Route path='/' element ={<Home />} />
    <Route path='/login' element ={<Login />} />
    <Route path='/Agents' element ={<AgentsContainer/>} />
