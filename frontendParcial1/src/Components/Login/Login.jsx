@@ -21,7 +21,7 @@ export default function Login() {
     } else {
       console.log(username);
       console.log(password);
-      setErrorMessage("Por favor ingresa un valor correcto!");
+      setErrorMessage("Contraseña o usuario incorrecto");
     }
   };
 
