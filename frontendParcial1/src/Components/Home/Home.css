@@ -1,6 +1,6 @@
 .conteiner {
     width: 100%;
-    background-image: url('public/logocard.jpg');
+    background-image: url('public/fva.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,10 +11,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.conteiner video{
-    height: 60%;
-    width: 60%;
-    
-
 }

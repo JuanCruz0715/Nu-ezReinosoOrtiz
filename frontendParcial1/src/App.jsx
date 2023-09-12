@@ -16,6 +16,7 @@ function RoutesApp() {
    <Route path='/login' element ={<Login />} />
    <Route path='/Agents' element ={<AgentsContainer/>} />
    <Route path='/weapons' element={<GunsContainer/>}/>
+   <Route path='/maps' element={<MapsContainer/>}/>
       </Routes>
     </>
   );
