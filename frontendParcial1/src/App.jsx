@@ -12,10 +12,10 @@ function RoutesApp() {
      <Navbar/>
       <Routes>
       
-   <Route path='/' element ={<Home />} />
-   <Route path='/login' element ={<Login />} />
-   <Route path='/Agents' element ={<AgentsContainer/>} />
-   <Route path='/weapons' element={<GunsContainer/>}/>
+    <Route path='/' element ={<Login />} />
+    <Route path='/home' element ={<Home />} />
+    <Route path='/Agents' element ={<AgentsContainer/>} />
+    <Route path='/weapons' element={<GunsContainer/>}/>
       </Routes>
       </>
   )
