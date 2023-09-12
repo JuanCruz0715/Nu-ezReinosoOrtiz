@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: 'Valorant Font';
+  src: url('src/fonts/Valorant Font.ttf') format('truetype');
+}
 .login-container {
     width: 100%;
     background-image: url('public/logocard.jpg'); 
@@ -17,7 +20,7 @@
   
  
 .login-form {
-    font-family: 'Ropa Sans', sans-serif; 
+    font-family: 'Valorant Font', sans-serif; 
     background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
     border-radius: 10px;
@@ -39,7 +42,7 @@
   }
 
   .primary-button {
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Valorant Font', sans-serif;
     color: white;
     cursor: pointer;
     font-size: 13px;

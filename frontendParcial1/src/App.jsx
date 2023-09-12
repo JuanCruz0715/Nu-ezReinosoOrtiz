@@ -16,6 +16,11 @@ function RoutesApp() {
         <Route path="/Agents" element={<AgentsContainer />} />
         <Route path="/weapons" element={<GunsContainer />} />
         <Route path="/Maps" element={<MapsContainer />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Agents" element={<AgentsContainer />} />
+        <Route path="/weapons" element={<GunsContainer />} />
+        <Route path="/maps" element={<MapsContainer />} />
       </Routes>
     </>
   );

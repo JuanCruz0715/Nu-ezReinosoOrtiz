@@ -28,7 +28,7 @@ img {
   background-color: #f66464; /* Cambia el color de fondo al pasar el mouse por encima */
 }
 .card {
-  background-image: url('public/logocard.jpg');
+  background-image: url('public/fondo.jpg');
   border: 1px solid #3a3838;
   border-radius: 5px;
   padding: 10px;

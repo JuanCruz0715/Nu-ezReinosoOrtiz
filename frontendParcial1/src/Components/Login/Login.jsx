@@ -39,7 +39,7 @@ export default function Login() {
             <input type="password" value={password} onChange={handlePasswordChange} className="login-input" /> 
           </div>
           <button type="button" onClick={handleLogin} className="primary-button"> 
-            Iniciar sesión
+            Play Valorant
           </button>
         </form>
       </div>
