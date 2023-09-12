@@ -17,9 +17,11 @@
     min-height: 100vh;
     margin-bottom: 150px;
     
+    
 }
 .Card-Maps{
     padding: 0;
+    margin-left: 20px;
 }
 .Card-Maps:hover{
 

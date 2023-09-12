@@ -20,13 +20,13 @@ export const GunsContainer = () => {
   return (
     <div className="Container-fondo">
       <h2>Weapons</h2>
-      <div className="Container">
-        
+      <div className="Container-Card">
         {guns
           .filter((guns) => {
             return (
               guns.uuid != "44d4e95c-4157-0037-81b2-17841bf2e8e3" &&
-              guns.uuid != "29a0cfab-485b-f5d5-779a-b59f85e204a8"
+              guns.uuid != "29a0cfab-485b-f5d5-779a-b59f85e204a8" &&
+              guns.uuid != "2f59173c-4bed-b6c3-2191-dea9b58be9c7"
             );
           })
           .map((guns) => (

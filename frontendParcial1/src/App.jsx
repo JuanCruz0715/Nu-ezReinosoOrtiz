@@ -11,19 +11,11 @@ function RoutesApp() {
     <>
       <Navbar />
       <Routes>
-<<<<<<< HEAD
-      
-   <Route path='/' element ={<Home />} />
-   <Route path='/login' element ={<Login />} />
-   <Route path='/Agents' element ={<AgentsContainer/>} />
-   <Route path='/weapons' element={<GunsContainer/>}/>
-   <Route path='/maps' element={<MapsContainer/>}/>
-=======
-      <Route path='/' element ={<Login />} />
-      <Route path='/Home' element ={<Home />} />
-      <Route path='/Agents' element ={<AgentsContainer/>} />
-      <Route path='/weapons' element={<GunsContainer/>}/>
->>>>>>> 8a89deb6e8b39f48cff3b0b9826532f376fed8bc
+        <Route path="/" element={<Login />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Agents" element={<AgentsContainer />} />
+        <Route path="/weapons" element={<GunsContainer />} />
+        <Route path="/Maps" element={<MapsContainer />} />
       </Routes>
     </>
   );

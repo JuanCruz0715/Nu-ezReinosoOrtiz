@@ -12,7 +12,7 @@ background-repeat: no-repeat;
   font-family: 'Valorant Font',sans-serif;
   color:white;
 }
-.Container{
+.Container-Card{
 width: 80%;
 max-width: calc(100%-2rem);
 margin: 0 auto;
@@ -56,7 +56,7 @@ font-family: 'Valorant Font';
 opacity: 1.0;
 cursor: pointer;
 background-color: #FF4457;
-transition: 0.2s ease-in-out;
+
 scale: 1.1;
 box-shadow: 0 0 20px white;
 transition: 0.5s all;
