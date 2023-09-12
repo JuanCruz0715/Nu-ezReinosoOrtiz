@@ -5,9 +5,11 @@ import Login from "./Components/Login/Login";
 import { AgentsContainer } from "./Components/AgentsContainer/AgentsContainer";
 import { GunsContainer } from "./Components/GunsContainer/GunsContainer";
 import { MapsContainer } from "./Components/MapsContainer/MapsContainer";
+import Navbar from "./Components/NavBar/Navbar";
 function RoutesApp() {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
