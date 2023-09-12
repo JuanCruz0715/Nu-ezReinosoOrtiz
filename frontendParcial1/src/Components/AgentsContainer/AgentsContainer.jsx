@@ -21,7 +21,7 @@ export const AgentsContainer = () => {
    console.log("agentes",agentes)
    return (
     <div className="agents-page">
-      <h1>Agentes</h1>
+      <h1>Agents</h1>
     <div className="agents-container">
         {agentes.filter((agentes) => {
           return agentes.uuid != "ded3520f-4264-bfed-162d-b080e2abccf9"
