@@ -17,7 +17,11 @@ export const getGuns = async () => {
 
 }
 
-
+export const getMaps = async () => {
+  const url = "/maps";
+  const response = await instance.get(url);
+  return response.data.data;
+};
 
 
 

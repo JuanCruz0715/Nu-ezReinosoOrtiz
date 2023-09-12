@@ -4,25 +4,29 @@ import CardMaps from "./CardMaps/CardMaps";
 import "./CardMaps/CardMaps.css";
 
 export const MapsContainer = () => {
-  const [Maps, setMaps] = useState([]);
+  const [maps, setMaps] = useState([]);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
     const fetchApi = async () => {
       try {
         const data = await getMaps();
         setMaps(data);
-        console.log(data);
       } catch (error) {
-        console.error("No se mostraron los mapas", error);
+        setError("No se pudieron cargar los mapas. Por favor, inténtalo más tarde.");
+        console.error("Error al obtener los mapas", error);
       }
     };
+
     fetchApi();
   }, []);
 
   return (
     <div className="Container-Fondo">
       <div className="Container">
-        {Maps.map((Maps) => (
-          <CardMaps key={Maps.uuid} data={Maps} />
+        {error && <p>{error}</p>}
+        {maps.map((map) => (
+          <CardMaps key={map.uuid} data={map} />
         ))}
       </div>
     </div>
