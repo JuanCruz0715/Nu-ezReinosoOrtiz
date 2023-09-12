@@ -16,12 +16,21 @@ export const getGuns = async () => {
    
 
 }
+<<<<<<< HEAD
 export const getMaps = async () => {
   const url = "/Maps";
   const response = await instance.get(url);
   return response.data.data;
 };
 
+=======
+
+export const getMaps = async () => {
+  const url = "/maps";
+  const response = await instance.get(url);
+  return response.data.data;
+};
+>>>>>>> 8a89deb6e8b39f48cff3b0b9826532f376fed8bc
 
 
 

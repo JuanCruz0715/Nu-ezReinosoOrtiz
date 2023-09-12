@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css'; // Asegúrate de que la ruta sea correcta
+import './Login.css'; 
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -14,16 +14,20 @@ export default function Login() {
   };
 
   const handleLogin = () => {
-    if (username === 'nicolas' && password === '12345678') {
-      alert('¡Inicio de sesión exitoso!');
+    if (username === 'admin' && password === '12345678') {
+      console.log(username);
+      console.log(password);
+      window.location.href = "/Home";
     } else {
-      alert('Nombre de usuario o contraseña incorrectos.');
+      console.log(username);
+      console.log(password);
+      setErrorMessage("Contraseña o usuario incorrecto");
     }
   };
 
   return (
     <div className="login-container"> 
-      <div className="login-form"> {/* Aplica la clase CSS "login-form" */}
+      <div className="login-form"> 
         <h2>Iniciar sesión</h2>
         <form>
           <div>
